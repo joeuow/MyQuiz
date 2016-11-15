@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/editText_q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question"
+            android:textSize="12sp"
+            android:cursorVisible="true"/>
+
+        <requestFocus />
+        <EditText
+            android:id="@+id/editText_op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option1"
+            android:background="@color/colorBtuPress"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:cursorVisible="true"/>
+
+        <EditText
+            android:id="@+id/editText_op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option2"
+            android:background="@color/colorBtuNormal"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:cursorVisible="true"/>
+
+        <EditText
+            android:id="@+id/editText_op3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option3"
+            android:background="@color/colorBtuPress"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:cursorVisible="true" />
+
+        <EditText
+            android:id="@+id/editText_op4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option4"
+            android:background="@color/colorBtuNormal"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:cursorVisible="true"/>
+
+        <EditText
+            android:id="@+id/editText_op5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option5"
+            android:background="@color/colorBtuPress"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:cursorVisible="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer Number "
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/editText_q_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="#"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answering Time (sec) "
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:id="@+id/editText_q_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="time"
+                android:textSize="11sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btu_edit_question"
+            android:layout_gravity="right"
+            android:background="@drawable/btu_save"
+            android:layout_height="30dp"
+            android:layout_width="60dp"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+
+</LinearLayout>
